@@ -9,10 +9,16 @@ int main() {
       int x, y;
       cin >> x >> y;
 
-      if(x >= 0 && y >= 0 && x <= y){
+      if(x <= y){
           for(int z = x; z <= y; z++){
               cout << x << endl;
               ++x;
           }
+      } else if (x > y){
+          for(int z = x; z >= y; z--){
+              cout << x << endl;
+              --x;
+          }
       }
+
 }
